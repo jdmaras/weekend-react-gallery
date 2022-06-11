@@ -6,9 +6,12 @@ function GalleryList({ photoArray, plusOneLike }) {
         <>
             <h2>~*Some Photos I love*~</h2>
             <ul className="photosContainer">
-                {/* baby needs a key tag */}
                 {photoArray.map(item => (
-                    <GalleryItem item={item} plusOneLike={plusOneLike} />
+                    <GalleryItem
+                        key={item.id}
+                        item={item}
+                        plusOneLike={plusOneLike}
+                    />
                 ))}
             </ul>
         </>
