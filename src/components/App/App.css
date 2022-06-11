@@ -13,3 +13,13 @@
   font-size: 1.5em;
 }
 
+ul {
+  list-style-type: none;
+}
+
+.photosAndBtns img {
+  width: 400px;
+  height: auto;
+  align-items: center;
+  display: inline-block;
+}

@@ -1,10 +1,11 @@
 import { useState } from "react";
+
 function GalleryItem({ item, plusOneLike }) {
-    //
+
     const [showDescription, setShowDescription] = useState(false);
 
     return (
-        <li>
+        <li className="photosAndBtns">
             {
                 showDescription ?
                     <p onClick={() => setShowDescription(false)}>{item.description}</p> :

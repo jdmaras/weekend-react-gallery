@@ -13,6 +13,7 @@ function App() {
   useEffect(() => {
     getPhotos()
   }, [])
+
   const getPhotos = () => {
     axios.get('/gallery')
       .then((response) => {
@@ -41,7 +42,6 @@ function App() {
         <h1 className="App-title">Gallery of My Life</h1>
       </header>
       <GalleryList photoArray={photoArray} plusOneLike={plusOneLike} />
-      <img src="images/goat_small.jpg" />
     </div>
   );
 }
