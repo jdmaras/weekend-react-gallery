@@ -1,3 +1,6 @@
+
+//these are the photos and description you're putting in 
+
 const galleryItems = [
     { id: 1, path: 'images/one.jpeg', description: 'Just lawn chairs in the front yard.', likes: 0 },
     { id: 2, path: 'images/two.jpeg', description: 'Papa Maras at the game', likes: 0 },

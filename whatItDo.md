@@ -16,7 +16,7 @@ REACT GALLERY
             what the photo is
     [x] - Create 'Like' Button
     [x] - Make like button display number of times the button is pressed
-    [x] - Update the gallery each time like button is clicked
+    [ ] - Update the gallery each time like button is clicked
 
 
 [x] - Don't forget to branch off main
