@@ -8,7 +8,8 @@ function GalleryItem({ item, plusOneLike }) {
         <li className="photosAndBtns">
             {
                 showDescription ?
-                    <p onClick={() => setShowDescription(false)}>{item.description}</p> :
+                    <p onClick={() => setShowDescription(false)}>{item.description}</p>
+                    :
                     <img src={item.path} onClick={() => setShowDescription(true)} />
             }
             <br></br>
