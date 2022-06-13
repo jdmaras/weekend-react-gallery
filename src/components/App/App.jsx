@@ -6,10 +6,10 @@ import GalleryList from '../GalleryList/GalleryList';
 import './App.css';
 
 function App() {
-
+  //Setting the useState to the same data type that you're working with - so we are using an array here so empty array
   const [photoArray, setPhotoAray] = useState([]);
 
-  //empty array makes it not call getPhotos every time the page renders
+  //empty array makes it not call getPhotos every time the page renders - fetching the data from server on page load - so you use useEffect
   useEffect(() => {
     getPhotos()
   }, [])
@@ -27,10 +27,15 @@ function App() {
         alert('ERR IN THE GET')
       })
   }
+  //setting `id` as argument because that is the url 
+  // i'm looking for
   const plusOneLike = (id) => {
     axios.put(`/gallery/like/${id}`)
       .then(() => {
         console.log('This plussses it')
+        //now we go back and grab those new likes
+        // calling back the getPhotos which has the likes
+        // connected to it
         getPhotos()
       })
       .catch((err) => {
@@ -50,5 +55,7 @@ function App() {
     </div>
   );
 }
+// photoArray={photoArray} & plusOneLike={plusOneLike} - that is us passing that function down the GalleryList
 
 export default App;
+

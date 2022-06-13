@@ -18,6 +18,8 @@ router.put('/like/:id', (req, res) => {
 
 // GET Route
 router.get('/', (req, res) => {
+    // Sending the array of objects from gallery.data.js
+    // using POSTMAN - you can check to make sure that this is grabbing those galleryItems
     res.send(galleryItems);
 }); // END GET Route
 
