@@ -21,3 +21,14 @@ function GalleryItem({ item, plusOneLike }) {
     )
 }
 export default GalleryItem;
+
+// <div onClick={() => setShowDescription(!showDescription) }>
+// {showDescription ?
+//         <img src={galleryItem.path}/>
+//          :
+// }
+
+//function togglThing(thing){
+//     return !thing;
+// }
+// remember exlamation points can set you to opposite for booleans
