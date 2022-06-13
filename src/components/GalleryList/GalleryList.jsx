@@ -1,5 +1,6 @@
 import GalleryItem from "../GalleryItem/GalleryItem";
 
+//destructuring so we don't have to put photoArray: photoArray
 function GalleryList({ photoArray, plusOneLike }) {
 
     return (

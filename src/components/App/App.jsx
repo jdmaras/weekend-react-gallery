@@ -17,6 +17,9 @@ function App() {
   const getPhotos = () => {
     axios.get('/gallery')
       .then((response) => {
+        // .data is the information that you need and without it
+        // response returns a bunch of extra information we don't need and this narrows it down
+        // GETting the array from gallery.data
         setPhotoAray(response.data)
       })
       .catch((err) => {
@@ -41,7 +44,9 @@ function App() {
       <header className="App-header">
         <h1 className="App-title">Gallery of My Life</h1>
       </header>
-      <GalleryList photoArray={photoArray} plusOneLike={plusOneLike} />
+      <GalleryList
+        photoArray={photoArray}
+        plusOneLike={plusOneLike} />
     </div>
   );
 }
